@@ -20,7 +20,7 @@ html, body, #root { height: 100%; margin: 0; }
 body { background: var(--near-black); color: var(--cream); font-family: var(--font-ui); overflow: hidden; }
 button { font-family: inherit; cursor: pointer; }
 :focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
-.app-root { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
+.app-root { position: relative; width: 100vw; height: 100vh; height: 100dvh; overflow: hidden; }
 
 /* ---------------- Loading ---------------- */
 .loading-screen { position: fixed; inset: 0; z-index: 100; background: var(--near-black); display: flex; align-items: center; justify-content: center; transition: opacity 0.45s ease, visibility 0.45s ease; }
