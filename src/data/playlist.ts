@@ -130,6 +130,96 @@ export const LIBRARY: Track[] = [
   track('Chhupana Bhi Nahi Aata', 'Pankaj Udhas', 'Baazigar', 1993, ['90S', 'ROMANTIC']),
 ];
 
+// ---------------------------------------------------------------------------
+// Verified YouTube ID patch — 39 / 63 tracks confirmed so far
+// ---------------------------------------------------------------------------
+// Each ID below was confirmed via web search against an official label
+// upload (T-Series, Zee Music, Saregama, Sony Music, Tips Official,
+// Universal Music, or Ishtar Music) — identified by a "Provided to YouTube
+// by [Label]" credit or a clearly-branded official channel. Tracks not yet
+// verified are left untouched (youtubeId stays null, demo tone plays).
+//
+// Keys are the auto-generated `id` field (title+album slug), so this map
+// stays in sync automatically as long as title/album text above doesn't change.
+const YOUTUBE_IDS: Record<string, string> = {
+  // --- PLAYLIST (29/29 done) ---
+  'aankhon-se-tune-kya-keh-diya-ghulam': 'qsTaDNyqaug',
+  'aankhon-mein-base-ho-tum-takkar': '5w85_aCzf0o',
+  'ae-ajnabi-dil-se': 'cVbsm06tPQc',
+  'kaho-naa-pyaar-hai-kaho-naa-pyaar-hai': '-LESbtPT8uw',
+  'kaho-naa-pyaar-hai-title-track-kaho-naa-pyaar-hai': '-LESbtPT8uw',
+  'tujhe-dekha-to-dilwale-dulhania-le-jayenge': '_hKJEqxn_OU',
+  'pehla-nasha-jo-jeeta-wohi-sikandar': 'Ki41AKu0iHc',
+  'tu-hi-meri-shab-hai-gangster': 'cGNcjqXe87U',
+  'woh-ladki-hai-kahan-dil-chahta-hai': 'sLva5MIY7ZY',
+  'kya-mujhe-pyaar-hai-woh-lamhe': 'lrAM_H7v8wM',
+  'aadat-kalyug': 'QGNcfBhGFdc',
+  'ya-ali-gangster': 'QFW6FnryEpk',
+  'zara-zara-rehnaa-hai-terre-dil-mein': 'FxNaJNZWUNI',
+  'sach-keh-raha-hai-deewana-rehnaa-hai-terre-dil-mein': 'PizHX6Kuy1M',
+  'dil-ko-tumse-pyaar-hua-rehnaa-hai-terre-dil-mein': 'XcMy3lyDaQg',
+  'kaho-naa-pyaar-hai-chand-sitare-kaho-naa-pyaar-hai': 'a6SCEu_fEKM',
+  'aankhon-mein-teri-om-shanti-om': '2drIKUOCZxU',
+  'woh-pehli-baar-pyaar-mein-kabhi-kabhi': 'xeNbkk0swac',
+  'ek-ladki-ko-dekha-1942-a-love-story': 'H5sheEWfsOQ',
+  'ghar-se-nikalte-hi-papa-kehte-hain': 'ra877R2nbxg',
+  'do-dil-mil-rahe-hain-pardes': '5SvIuD6wJRI',
+  'tum-mile-tum-mile': 'C0S0PMpNybM',
+  'tu-jaane-na-ajab-prem-ki-ghazab-kahani': 'P8PWN1OmZOA',
+  'tera-hone-laga-hoon-ajab-prem-ki-ghazab-kahani': 'dQVIILOx_hU',
+  'main-agar-kahoon-om-shanti-om': '8PEqEh1lnNE',
+  'ajab-si-om-shanti-om': 'bdS6OoH1W2A',
+  'tere-bin-bas-ek-pal': 'k6NnNv7XJYg',
+  'aao-milo-chalo-jab-we-met': 'U0JYkRqU6eY',
+  'safarnama-tamasha': '7mTDBsdfw88',
+
+  // --- LIBRARY extension (10/34 done so far) ---
+  // NB: these three are tagged 'Deewana' above but are actually from other
+  // films — the ID still matches the correct song, just flagging the
+  // pre-existing album/year mismatch in case you want to fix that too.
+  'mujhse-mohabbat-ka-deewana': '6B3I3qBs9P0', // actually "Hum Hain Rahi Pyar Ke" (1993)
+  'tumsa-koi-pyaara-deewana': 'r-u7UY3yagM', // actually "Khuddar" (1994)
+  'pehli-pehli-baar-mohabbat-ki-hai-deewana': 'LMrgv7bRLQM', // actually "Sirf Tum" (1999)
+  'tumhein-apna-banane-ki-kasam-baazigar': 'tPNwGuu_rQ4', // actually "Sadak" (1991)
+  'bahut-pyar-karte-hain-saajan': 'E9YqWhNb02w',
+  'aaye-ho-meri-zindagi-mein-raja-hindustani': 'r7cUMWxS6Xo',
+  'barsaat-ke-mausam-mein-barsaat': 'ER7RoDTT2_4', // actually "Naajayaz" (1995)
+  'mera-dil-bhi-kitna-pagal-hai-saajan': 'exUky0gJJ3o',
+  'pardesi-pardesi-raja-hindustani': 'W5lusYuAW0s',
+  'dil-hai-ke-manta-nahin-dil-hai-ke-manta-nahin': 'C9efe0rjDlE',
+
+  // --- Still to verify (24 remaining) ---
+  // saaton-janam-main-tere-deewana        (actually "Dilwale" 1994)
+  // honton-pe-bas-sadak
+  // musafir-hoon-yaaron-parichay
+  // zindagi-ek-safar-hai-suhana-andaz
+  // hum-jo-chalne-lage-jab-we-met
+  // khaabon-ke-parinday-zindagi-na-milegi-dobara
+  // dil-chahta-hai-dil-chahta-hai
+  // patli-kamar-sur
+  // o-sanam-sunoh
+  // na-tum-jaano-na-hum-kaho-naa-pyaar-hai
+  // tanha-dil-tanha-dil
+  // iktara-wake-up-sid
+  // in-dino-life-in-a-metro
+  // jaadu-hai-nasha-hai-jism
+  // toh-phir-aao-awarapan
+  // maahi-ghajini
+  // gulabi-aankhen-the-train
+  // pal-pal-dil-ke-paas-blackmail
+  // neele-neele-ambar-par-kalakaar
+  // mere-sapno-ki-rani-aradhana
+  // roop-tera-mastana-aradhana
+  // yeh-shaam-mastani-kati-patang
+  // chura-ke-dil-mera-main-khiladi-tu-anari
+  // chhupana-bhi-nahi-aata-baazigar
+};
+
+for (const t of LIBRARY) {
+  const id = YOUTUBE_IDS[t.id];
+  if (id) t.youtubeId = id;
+}
+
 export function trackById(id: string): Track | undefined {
   return LIBRARY.find((t) => t.id === id);
 }
