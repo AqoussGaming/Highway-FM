@@ -1,15 +1,14 @@
 /* ---------------------------------------------------------------
    HIGHWAY FM — design tokens
-   Dark warm translucent glass, amber highlights, cream type,
-   muted orange progress. No Spotify green / neon / cyberpunk.
+   Lavender accents on soft, blurry transparent-white glass.
 ----------------------------------------------------------------*/
 :root {
   --near-black: #08090c;
-  --amber: #e8a94c;
-  --amber-dim: #a8752f;
-  --cream: #f2e6cf;
-  --glass-bg: rgba(15, 12, 10, 0.45);
-  --glass-border: rgba(255, 255, 255, 0.12);
+  --amber: #b9a6e8;
+  --amber-dim: #8f7cc4;
+  --cream: #f5f2ff;
+  --glass-bg: rgba(255, 255, 255, 0.14);
+  --glass-border: rgba(255, 255, 255, 0.32);
   --font-display: Georgia, 'Iowan Old Style', 'Palatino Linotype', serif;
   --font-mono: 'Courier New', ui-monospace, SFMono-Regular, monospace;
   --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -91,7 +90,7 @@ button { font-family: inherit; cursor: pointer; }
   box-shadow:
     0 6px 16px rgba(0, 0, 0, 0.45),
     0 0 0 3px rgba(0, 0, 0, 0.25),
-    0 0 18px 2px rgba(232, 169, 76, 0.35);
+    0 0 18px 2px rgba(185, 166, 232, 0.35);
   animation: disc-spin 24s linear infinite, disc-breathe 3.2s ease-in-out infinite;
 }
 @keyframes disc-breathe { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.08); } }
@@ -129,8 +128,8 @@ button { font-family: inherit; cursor: pointer; }
 .progress-time { font-family: var(--font-mono); font-size: 0.66rem; color: var(--cream); opacity: 0.65; width: 34px; flex-shrink: 0; text-align: center; }
 .progress-track { position: relative; flex: 1; height: 14px; display: flex; align-items: center; cursor: pointer; touch-action: none; }
 .progress-track::before { content: ''; position: absolute; left: 0; right: 0; height: 3px; background: rgba(242, 230, 207, 0.16); border-radius: 2px; }
-.progress-fill { position: absolute; left: 0; height: 3px; background: linear-gradient(90deg, var(--amber-dim), var(--amber)); border-radius: 2px; box-shadow: 0 0 8px 0 rgba(232, 169, 76, 0.55); }
-.progress-thumb { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: var(--cream); transform: translateX(-50%); box-shadow: 0 0 6px rgba(232, 169, 76, 0.6); opacity: 0; transition: opacity 0.15s ease; }
+.progress-fill { position: absolute; left: 0; height: 3px; background: linear-gradient(90deg, var(--amber-dim), var(--amber)); border-radius: 2px; box-shadow: 0 0 8px 0 rgba(185, 166, 232, 0.55); }
+.progress-thumb { position: absolute; width: 10px; height: 10px; border-radius: 50%; background: var(--cream); transform: translateX(-50%); box-shadow: 0 0 6px rgba(185, 166, 232, 0.6); opacity: 0; transition: opacity 0.15s ease; }
 .progress-track:hover .progress-thumb, .progress-track:focus-visible .progress-thumb { opacity: 1; }
 
 .tap-hint { font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.06em; margin: 2px 0 0; color: var(--amber); opacity: 0.9; }
@@ -146,12 +145,12 @@ button { font-family: inherit; cursor: pointer; }
 .icon-btn.active { color: var(--amber); }
 .icon-btn.small { padding: 5px; opacity: 0.85; }
 .play-btn {
-  background: radial-gradient(circle at 35% 30%, #f4c877, var(--amber) 70%);
+  background: radial-gradient(circle at 35% 30%, #e6dbff, var(--amber) 70%);
   color: var(--near-black);
   border-radius: 50%;
   width: 42px;
   height: 42px;
-  box-shadow: 0 4px 14px rgba(232, 169, 76, 0.35);
+  box-shadow: 0 4px 14px rgba(185, 166, 232, 0.35);
 }
 .play-btn:hover { filter: brightness(1.08); transform: scale(1.06); }
 
@@ -184,7 +183,7 @@ button { font-family: inherit; cursor: pointer; }
 .track-list { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; }
 .track-row { width: 100%; display: flex; align-items: center; gap: 10px; background: transparent; border: none; color: var(--cream); padding: 9px 6px; border-radius: 8px; text-align: left; }
 .track-row:hover { background: rgba(255, 255, 255, 0.06); }
-.track-row.active { background: rgba(232, 169, 76, 0.16); color: var(--amber); }
+.track-row.active { background: rgba(185, 166, 232, 0.20); color: var(--amber); }
 .track-number { font-family: var(--font-mono); font-size: 0.68rem; opacity: 0.5; width: 18px; flex-shrink: 0; }
 .track-info { min-width: 0; flex: 1; display: flex; flex-direction: column; }
 .track-row-title { font-size: 0.8rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
